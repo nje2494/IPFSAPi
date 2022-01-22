@@ -1,15 +1,15 @@
 const express = require('express');
 
-const emojis = require('./emojis');
+const nfts = require('./nfts');
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    message: 'API - 👋🌎🌍🌏'
+    message: 'NFT Resolver V1'
   });
 });
 
-router.use('/emojis', emojis);
+router.use('/nft', nfts);
 
 module.exports = router;
